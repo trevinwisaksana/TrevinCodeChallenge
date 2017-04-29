@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B348953A4708FAADD416049F /* Pods_Trevin_Coding_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6CF45F314ECB5C119FDBFD /* Pods_Trevin_Coding_ChallengeUITests.framework */; };
+		B47259C7A6F5EA8A9FEB6559 /* Pods_Trevin_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F888670BF7F860C259C1BD /* Pods_Trevin_Coding_Challenge.framework */; };
+		CBE11EA00F00C491854A1327 /* Pods_Trevin_Coding_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6582E623DA48EA926AE1165 /* Pods_Trevin_Coding_ChallengeTests.framework */; };
+		DD9061911EB4060C00C70267 /* TopMoviesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */; };
+		DD9D2DB01EB1884500AB5894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */; };
+		DD9D2DB51EB1884500AB5894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D2DB31EB1884500AB5894 /* Main.storyboard */; };
+		DD9D2DB81EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DB61EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld */; };
+		DD9D2DBA1EB1884500AB5894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9D2DB91EB1884500AB5894 /* Assets.xcassets */; };
+		DD9D2DBD1EB1884500AB5894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D2DBB1EB1884500AB5894 /* LaunchScreen.storyboard */; };
+		DD9D2DC81EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DC71EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift */; };
+		DD9D2DD31EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DD21EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift */; };
+		DD9D2DE71EB1896900AB5894 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DE61EB1896900AB5894 /* APIClient.swift */; };
+		DD9D2DE91EB1897B00AB5894 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DE81EB1897B00AB5894 /* Router.swift */; };
+		DD9D2DEB1EB189C500AB5894 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DEA1EB189C500AB5894 /* Movie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9D2DC41EB1884500AB5894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9D2DA41EB1884500AB5894 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9D2DAB1EB1884500AB5894;
+			remoteInfo = Trevin_Coding_Challenge;
+		};
+		DD9D2DCF1EB1884600AB5894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9D2DA41EB1884500AB5894 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9D2DAB1EB1884500AB5894;
+			remoteInfo = Trevin_Coding_Challenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28F888670BF7F860C259C1BD /* Pods_Trevin_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trevin_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4335B030E5894CB7FCBB2CD3 /* Pods-Trevin_Coding_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_Challenge/Pods-Trevin_Coding_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5F09DE13ED2085D76F36FB5F /* Pods-Trevin_Coding_ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_ChallengeUITests/Pods-Trevin_Coding_ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		763FEE4DD72DD3BB32342FD5 /* Pods-Trevin_Coding_ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_ChallengeTests/Pods-Trevin_Coding_ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77DEFC226F023EFF3B651731 /* Pods-Trevin_Coding_ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_ChallengeTests/Pods-Trevin_Coding_ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F991B922B755F95AD299B04 /* Pods-Trevin_Coding_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_Challenge/Pods-Trevin_Coding_Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		AE55BE4036A806B453B32B02 /* Pods-Trevin_Coding_ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trevin_Coding_ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trevin_Coding_ChallengeUITests/Pods-Trevin_Coding_ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD6CF45F314ECB5C119FDBFD /* Pods_Trevin_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trevin_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6582E623DA48EA926AE1165 /* Pods_Trevin_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trevin_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMoviesCollectionViewController.swift; sourceTree = "<group>"; };
+		DD9D2DAC1EB1884500AB5894 /* Trevin_Coding_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trevin_Coding_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD9D2DB41EB1884500AB5894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9D2DB71EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trevin_Coding_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		DD9D2DB91EB1884500AB5894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9D2DBC1EB1884500AB5894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9D2DBE1EB1884500AB5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9D2DC31EB1884500AB5894 /* Trevin_Coding_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Trevin_Coding_ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D2DC71EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trevin_Coding_ChallengeTests.swift; sourceTree = "<group>"; };
+		DD9D2DC91EB1884600AB5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9D2DCE1EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Trevin_Coding_ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9D2DD21EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trevin_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
+		DD9D2DD41EB1884600AB5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9D2DE61EB1896900AB5894 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DD9D2DE81EB1897B00AB5894 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DD9D2DEA1EB189C500AB5894 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9D2DA91EB1884500AB5894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47259C7A6F5EA8A9FEB6559 /* Pods_Trevin_Coding_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DC01EB1884500AB5894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE11EA00F00C491854A1327 /* Pods_Trevin_Coding_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DCB1EB1884600AB5894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B348953A4708FAADD416049F /* Pods_Trevin_Coding_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C09696272F6FBCBFC366970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F888670BF7F860C259C1BD /* Pods_Trevin_Coding_Challenge.framework */,
+				C6582E623DA48EA926AE1165 /* Pods_Trevin_Coding_ChallengeTests.framework */,
+				BD6CF45F314ECB5C119FDBFD /* Pods_Trevin_Coding_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB5775A98F5CB4F03CB4C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4335B030E5894CB7FCBB2CD3 /* Pods-Trevin_Coding_Challenge.debug.xcconfig */,
+				8F991B922B755F95AD299B04 /* Pods-Trevin_Coding_Challenge.release.xcconfig */,
+				763FEE4DD72DD3BB32342FD5 /* Pods-Trevin_Coding_ChallengeTests.debug.xcconfig */,
+				77DEFC226F023EFF3B651731 /* Pods-Trevin_Coding_ChallengeTests.release.xcconfig */,
+				5F09DE13ED2085D76F36FB5F /* Pods-Trevin_Coding_ChallengeUITests.debug.xcconfig */,
+				AE55BE4036A806B453B32B02 /* Pods-Trevin_Coding_ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD9D2DA31EB1884500AB5894 = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DAE1EB1884500AB5894 /* Trevin_Coding_Challenge */,
+				DD9D2DC61EB1884600AB5894 /* Trevin_Coding_ChallengeTests */,
+				DD9D2DD11EB1884600AB5894 /* Trevin_Coding_ChallengeUITests */,
+				DD9D2DAD1EB1884500AB5894 /* Products */,
+				CAB5775A98F5CB4F03CB4C86 /* Pods */,
+				9C09696272F6FBCBFC366970 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9D2DAD1EB1884500AB5894 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DAC1EB1884500AB5894 /* Trevin_Coding_Challenge.app */,
+				DD9D2DC31EB1884500AB5894 /* Trevin_Coding_ChallengeTests.xctest */,
+				DD9D2DCE1EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9D2DAE1EB1884500AB5894 /* Trevin_Coding_Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DE21EB1890C00AB5894 /* Network */,
+				DD9D2DE11EB1890700AB5894 /* View */,
+				DD9D2DE01EB1890100AB5894 /* Model */,
+				DD9D2DE31EB1891400AB5894 /* ViewController */,
+				DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */,
+				DD9D2DE51EB1894000AB5894 /* Storyboards */,
+				DD9D2DE41EB1893400AB5894 /* Supporting Files */,
+			);
+			path = Trevin_Coding_Challenge;
+			sourceTree = "<group>";
+		};
+		DD9D2DC61EB1884600AB5894 /* Trevin_Coding_ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DC71EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift */,
+				DD9D2DC91EB1884600AB5894 /* Info.plist */,
+			);
+			path = Trevin_Coding_ChallengeTests;
+			sourceTree = "<group>";
+		};
+		DD9D2DD11EB1884600AB5894 /* Trevin_Coding_ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DD21EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift */,
+				DD9D2DD41EB1884600AB5894 /* Info.plist */,
+			);
+			path = Trevin_Coding_ChallengeUITests;
+			sourceTree = "<group>";
+		};
+		DD9D2DE01EB1890100AB5894 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DEA1EB189C500AB5894 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DD9D2DE11EB1890700AB5894 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DD9D2DE21EB1890C00AB5894 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DE61EB1896900AB5894 /* APIClient.swift */,
+				DD9D2DE81EB1897B00AB5894 /* Router.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		DD9D2DE31EB1891400AB5894 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DD9D2DE41EB1893400AB5894 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DB91EB1884500AB5894 /* Assets.xcassets */,
+				DD9D2DBE1EB1884500AB5894 /* Info.plist */,
+				DD9D2DB61EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD9D2DE51EB1894000AB5894 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D2DBB1EB1884500AB5894 /* LaunchScreen.storyboard */,
+				DD9D2DB31EB1884500AB5894 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9D2DAB1EB1884500AB5894 /* Trevin_Coding_Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D2DD71EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_Challenge" */;
+			buildPhases = (
+				94BCAC4E22EF330D0C4DD35D /* [CP] Check Pods Manifest.lock */,
+				DD9D2DA81EB1884500AB5894 /* Sources */,
+				DD9D2DA91EB1884500AB5894 /* Frameworks */,
+				DD9D2DAA1EB1884500AB5894 /* Resources */,
+				46910EDFED70535158542FC2 /* [CP] Embed Pods Frameworks */,
+				096666C025877C751D3F6AFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trevin_Coding_Challenge;
+			productName = Trevin_Coding_Challenge;
+			productReference = DD9D2DAC1EB1884500AB5894 /* Trevin_Coding_Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9D2DC21EB1884500AB5894 /* Trevin_Coding_ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D2DDA1EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_ChallengeTests" */;
+			buildPhases = (
+				AB52974CADEA010E43CC91B9 /* [CP] Check Pods Manifest.lock */,
+				DD9D2DBF1EB1884500AB5894 /* Sources */,
+				DD9D2DC01EB1884500AB5894 /* Frameworks */,
+				DD9D2DC11EB1884500AB5894 /* Resources */,
+				125786FC98124A0A4F512E1E /* [CP] Embed Pods Frameworks */,
+				417C0B3CFE1ACE67B892CB17 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9D2DC51EB1884500AB5894 /* PBXTargetDependency */,
+			);
+			name = Trevin_Coding_ChallengeTests;
+			productName = Trevin_Coding_ChallengeTests;
+			productReference = DD9D2DC31EB1884500AB5894 /* Trevin_Coding_ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD9D2DCD1EB1884600AB5894 /* Trevin_Coding_ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9D2DDD1EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_ChallengeUITests" */;
+			buildPhases = (
+				E9DD37B07840EC6D3204E4A9 /* [CP] Check Pods Manifest.lock */,
+				DD9D2DCA1EB1884600AB5894 /* Sources */,
+				DD9D2DCB1EB1884600AB5894 /* Frameworks */,
+				DD9D2DCC1EB1884600AB5894 /* Resources */,
+				28B26DC08643F97778B78D55 /* [CP] Embed Pods Frameworks */,
+				2AE19D902A4F936160E69947 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9D2DD01EB1884600AB5894 /* PBXTargetDependency */,
+			);
+			name = Trevin_Coding_ChallengeUITests;
+			productName = Trevin_Coding_ChallengeUITests;
+			productReference = DD9D2DCE1EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9D2DA41EB1884500AB5894 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Trevin Wisaksana";
+				TargetAttributes = {
+					DD9D2DAB1EB1884500AB5894 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+					};
+					DD9D2DC21EB1884500AB5894 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD9D2DAB1EB1884500AB5894;
+					};
+					DD9D2DCD1EB1884600AB5894 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD9D2DAB1EB1884500AB5894;
+					};
+				};
+			};
+			buildConfigurationList = DD9D2DA71EB1884500AB5894 /* Build configuration list for PBXProject "Trevin_Coding_Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9D2DA31EB1884500AB5894;
+			productRefGroup = DD9D2DAD1EB1884500AB5894 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9D2DAB1EB1884500AB5894 /* Trevin_Coding_Challenge */,
+				DD9D2DC21EB1884500AB5894 /* Trevin_Coding_ChallengeTests */,
+				DD9D2DCD1EB1884600AB5894 /* Trevin_Coding_ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9D2DAA1EB1884500AB5894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D2DBD1EB1884500AB5894 /* LaunchScreen.storyboard in Resources */,
+				DD9D2DBA1EB1884500AB5894 /* Assets.xcassets in Resources */,
+				DD9D2DB51EB1884500AB5894 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DC11EB1884500AB5894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DCC1EB1884600AB5894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096666C025877C751D3F6AFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_Challenge/Pods-Trevin_Coding_Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		125786FC98124A0A4F512E1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_ChallengeTests/Pods-Trevin_Coding_ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28B26DC08643F97778B78D55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_ChallengeUITests/Pods-Trevin_Coding_ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AE19D902A4F936160E69947 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_ChallengeUITests/Pods-Trevin_Coding_ChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		417C0B3CFE1ACE67B892CB17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_ChallengeTests/Pods-Trevin_Coding_ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46910EDFED70535158542FC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trevin_Coding_Challenge/Pods-Trevin_Coding_Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94BCAC4E22EF330D0C4DD35D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB52974CADEA010E43CC91B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DD37B07840EC6D3204E4A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9D2DA81EB1884500AB5894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D2DEB1EB189C500AB5894 /* Movie.swift in Sources */,
+				DD9D2DB81EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld in Sources */,
+				DD9061911EB4060C00C70267 /* TopMoviesCollectionViewController.swift in Sources */,
+				DD9D2DE91EB1897B00AB5894 /* Router.swift in Sources */,
+				DD9D2DB01EB1884500AB5894 /* AppDelegate.swift in Sources */,
+				DD9D2DE71EB1896900AB5894 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DBF1EB1884500AB5894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D2DC81EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9D2DCA1EB1884600AB5894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9D2DD31EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9D2DC51EB1884500AB5894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9D2DAB1EB1884500AB5894 /* Trevin_Coding_Challenge */;
+			targetProxy = DD9D2DC41EB1884500AB5894 /* PBXContainerItemProxy */;
+		};
+		DD9D2DD01EB1884600AB5894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9D2DAB1EB1884500AB5894 /* Trevin_Coding_Challenge */;
+			targetProxy = DD9D2DCF1EB1884600AB5894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9D2DB31EB1884500AB5894 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9D2DB41EB1884500AB5894 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD9D2DBB1EB1884500AB5894 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9D2DBC1EB1884500AB5894 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9D2DD51EB1884600AB5894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD9D2DD61EB1884600AB5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9D2DD81EB1884600AB5894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4335B030E5894CB7FCBB2CD3 /* Pods-Trevin_Coding_Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_Challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD9D2DD91EB1884600AB5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F991B922B755F95AD299B04 /* Pods-Trevin_Coding_Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_Challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DD9D2DDB1EB1884600AB5894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763FEE4DD72DD3BB32342FD5 /* Pods-Trevin_Coding_ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_ChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trevin_Coding_Challenge.app/Trevin_Coding_Challenge";
+			};
+			name = Debug;
+		};
+		DD9D2DDC1EB1884600AB5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77DEFC226F023EFF3B651731 /* Pods-Trevin_Coding_ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_ChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trevin_Coding_Challenge.app/Trevin_Coding_Challenge";
+			};
+			name = Release;
+		};
+		DD9D2DDE1EB1884600AB5894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F09DE13ED2085D76F36FB5F /* Pods-Trevin_Coding_ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_ChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Trevin_Coding_Challenge;
+			};
+			name = Debug;
+		};
+		DD9D2DDF1EB1884600AB5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE55BE4036A806B453B32B02 /* Pods-Trevin_Coding_ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = Trevin_Coding_ChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Trevin-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Trevin_Coding_Challenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9D2DA71EB1884500AB5894 /* Build configuration list for PBXProject "Trevin_Coding_Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D2DD51EB1884600AB5894 /* Debug */,
+				DD9D2DD61EB1884600AB5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D2DD71EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D2DD81EB1884600AB5894 /* Debug */,
+				DD9D2DD91EB1884600AB5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D2DDA1EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D2DDB1EB1884600AB5894 /* Debug */,
+				DD9D2DDC1EB1884600AB5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9D2DDD1EB1884600AB5894 /* Build configuration list for PBXNativeTarget "Trevin_Coding_ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9D2DDE1EB1884600AB5894 /* Debug */,
+				DD9D2DDF1EB1884600AB5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD9D2DB61EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD9D2DB71EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodel */,
+			);
+			currentVersion = DD9D2DB71EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodel */;
+			path = Trevin_Coding_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD9D2DA41EB1884500AB5894 /* Project object */;
+}
