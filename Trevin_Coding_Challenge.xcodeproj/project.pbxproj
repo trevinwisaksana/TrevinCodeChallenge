@@ -11,6 +11,8 @@
 		B47259C7A6F5EA8A9FEB6559 /* Pods_Trevin_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F888670BF7F860C259C1BD /* Pods_Trevin_Coding_Challenge.framework */; };
 		CBE11EA00F00C491854A1327 /* Pods_Trevin_Coding_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6582E623DA48EA926AE1165 /* Pods_Trevin_Coding_ChallengeTests.framework */; };
 		DD9061911EB4060C00C70267 /* TopMoviesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */; };
+		DD9061931EB44E0200C70267 /* TopMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9061921EB44E0200C70267 /* TopMovieCell.swift */; };
+		DD9061951EB522EB00C70267 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9061941EB522EB00C70267 /* MovieDetailViewController.swift */; };
 		DD9D2DB01EB1884500AB5894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */; };
 		DD9D2DB51EB1884500AB5894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9D2DB31EB1884500AB5894 /* Main.storyboard */; };
 		DD9D2DB81EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DB61EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld */; };
@@ -19,7 +21,6 @@
 		DD9D2DC81EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DC71EB1884600AB5894 /* Trevin_Coding_ChallengeTests.swift */; };
 		DD9D2DD31EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DD21EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift */; };
 		DD9D2DE71EB1896900AB5894 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DE61EB1896900AB5894 /* APIClient.swift */; };
-		DD9D2DE91EB1897B00AB5894 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DE81EB1897B00AB5894 /* Router.swift */; };
 		DD9D2DEB1EB189C500AB5894 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D2DEA1EB189C500AB5894 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		BD6CF45F314ECB5C119FDBFD /* Pods_Trevin_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trevin_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6582E623DA48EA926AE1165 /* Pods_Trevin_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trevin_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMoviesCollectionViewController.swift; sourceTree = "<group>"; };
+		DD9061921EB44E0200C70267 /* TopMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMovieCell.swift; sourceTree = "<group>"; };
+		DD9061941EB522EB00C70267 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		DD9D2DAC1EB1884500AB5894 /* Trevin_Coding_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trevin_Coding_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9D2DB41EB1884500AB5894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		DD9D2DD21EB1884600AB5894 /* Trevin_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trevin_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
 		DD9D2DD41EB1884600AB5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9D2DE61EB1896900AB5894 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		DD9D2DE81EB1897B00AB5894 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DD9D2DEA1EB189C500AB5894 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +187,7 @@
 		DD9D2DE11EB1890700AB5894 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD9061921EB44E0200C70267 /* TopMovieCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -193,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				DD9D2DE61EB1896900AB5894 /* APIClient.swift */,
-				DD9D2DE81EB1897B00AB5894 /* Router.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9061901EB4060C00C70267 /* TopMoviesCollectionViewController.swift */,
+				DD9061941EB522EB00C70267 /* MovieDetailViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -512,8 +515,9 @@
 				DD9D2DEB1EB189C500AB5894 /* Movie.swift in Sources */,
 				DD9D2DB81EB1884500AB5894 /* Trevin_Coding_Challenge.xcdatamodeld in Sources */,
 				DD9061911EB4060C00C70267 /* TopMoviesCollectionViewController.swift in Sources */,
-				DD9D2DE91EB1897B00AB5894 /* Router.swift in Sources */,
 				DD9D2DB01EB1884500AB5894 /* AppDelegate.swift in Sources */,
+				DD9061951EB522EB00C70267 /* MovieDetailViewController.swift in Sources */,
+				DD9061931EB44E0200C70267 /* TopMovieCell.swift in Sources */,
 				DD9D2DE71EB1896900AB5894 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

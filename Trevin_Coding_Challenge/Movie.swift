@@ -7,67 +7,13 @@
 //
 //  PLEASE VISIT THE COMMENTS BELOW THE CODE
 
-import UIKit
-// 1
+
+// SwiftyJSON will be used to parse the data we get from iTunes into JSON
 import SwiftyJSON
-
-// 2
-class Movie {
-    
-    // 3
-    var title: String?
-    var releaseDate: String?
-    var price: String?
-    var itunesLink: String?
-    var posterLink: URL?
-    
-    // 4 & 5
-    init?(json: JSON) {
-        
-        // 6
-        guard let data = json["feed"].dictionary else {
-            return nil
-        }
-        
-        guard let entry = data["entry"]?.dictionary else {
-            return nil
-        }
-        
-        guard let title = entry["im:name"]?["label"].string else {
-            return nil
-        }
-        
-        guard let releaseDate = entry["im:releaseDate"]?["attributes"]["label"].string else {
-            return nil
-        }
-        
-        guard let price = entry["im:price"]?["label"].string else {
-            return nil
-        }
-        
-        guard let itunesLink = entry["id"]?["label"].string else {
-            return nil
-        }
-        
-        guard let posterLink = entry["im:image"]?["label"].url else {
-            return nil
-        }
-        
-        // 7
-        self.title = title
-        self.posterLink = posterLink
-        self.releaseDate = releaseDate
-        self.price = price
-        self.itunesLink = itunesLink
-        
-    }
-
-    
-}
 
 
 /*
- The Movie class is a blueprint of a Movie. As a
+ The Movie struct is a blueprint of a Movie. As a
  blueprint, it's only an outline or a plan. In this case,
  it is an outline of what a Movie should have or what
  information a Movie should contain.
@@ -80,7 +26,52 @@ class Movie {
  
  We will use this to create a Movie based on the information
  the blueprint contains.
-*/
+ */
+
+struct Movie {
+    
+    // 3
+    var title: String?
+    var releaseDate: String?
+    var price: String?
+    var itunesLink: URL?
+    var posterLink: URL?
+    
+    // 4 & 5
+    init?(json: JSON) {
+        
+        // 6
+        guard let title = json["im:name"]["label"].string else {
+            return nil
+        }
+        
+        guard let releaseDate = json["im:releaseDate"]["attributes"]["label"].string else {
+            return nil
+        }
+        
+        guard let price = json["im:price"]["label"].string else {
+            return nil
+        }
+        
+        guard let itunesLink = json["id"]["label"].url else {
+            return nil
+        }
+        
+        guard let posterLink = json["im:image"][2]["label"].url else {
+            return nil
+        }
+        
+        // 7
+        self.title = title
+        self.posterLink = posterLink
+        self.releaseDate = releaseDate
+        self.price = price
+        self.itunesLink = itunesLink
+        
+    }
+    
+}
+
 
 /*
  • What does the init do?
