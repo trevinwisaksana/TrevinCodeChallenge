@@ -8,6 +8,7 @@ target 'Trevin_Coding_Challenge' do
   # Pods for Trevin_Coding_Challenge
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod ‘SDWebImage’
 
   target 'Trevin_Coding_ChallengeTests' do
     inherit! :search_paths

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class TopMovieCell: UICollectionViewCell {
     
@@ -17,11 +19,13 @@ class TopMovieCell: UICollectionViewCell {
     
     @IBOutlet weak var priceLabel: UILabel!
     
+    @IBOutlet weak var posterImage: UIImageView!
     
     func configure(with movie: Movie) {
         movieTitleLabel.text = movie.title
         releaseDateLabel.text = movie.releaseDate
         priceLabel.text = movie.price
+        posterImage.sd_setImage(with: movie.posterLink)
     }
     
 }

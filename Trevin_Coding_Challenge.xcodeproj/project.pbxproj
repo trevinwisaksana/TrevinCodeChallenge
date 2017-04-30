@@ -151,9 +151,9 @@
 				DD9D2DE11EB1890700AB5894 /* View */,
 				DD9D2DE01EB1890100AB5894 /* Model */,
 				DD9D2DE31EB1891400AB5894 /* ViewController */,
-				DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */,
 				DD9D2DE51EB1894000AB5894 /* Storyboards */,
 				DD9D2DE41EB1893400AB5894 /* Supporting Files */,
+				DD9D2DAF1EB1884500AB5894 /* AppDelegate.swift */,
 			);
 			path = Trevin_Coding_Challenge;
 			sourceTree = "<group>";
