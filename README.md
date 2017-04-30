@@ -14,6 +14,7 @@
 
 • There is also a back button implemented in the Movie Detail View Controller
 
+
 • SDWebImage library is used to set images onto Image Views and cache it
 </h4>
   
