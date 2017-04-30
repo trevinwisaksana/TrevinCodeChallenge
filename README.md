@@ -10,10 +10,8 @@
     
 ### Additional features
 <h4>  
-• The collection view cells now display a poster of the movie. 
-
+• The collection view cells now display a poster of the movie
 • There is also a back button implemented in the Movie Detail View Controller
-
 • SDWebImage library is used to set images onto Image Views and cache it
 </h4>
   
