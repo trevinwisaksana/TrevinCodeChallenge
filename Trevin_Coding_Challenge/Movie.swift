@@ -100,9 +100,5 @@ struct Movie {
  sense. The fail-able initializer will prevent this from happening
  by failing the Movie from being created if it's missing an
  information.
- 
- • Why does it need to take a type JSON?
- 
- 
- 
+  
  */
