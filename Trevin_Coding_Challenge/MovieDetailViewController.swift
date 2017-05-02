@@ -42,10 +42,6 @@ class MovieDetailViewController: UIViewController {
     }
     
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     /// Method that configures the UIElements of the MovieDetailViewController.
     ///
     /// - Parameter movie: It is type Movie

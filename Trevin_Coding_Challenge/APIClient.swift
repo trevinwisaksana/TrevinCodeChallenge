@@ -11,12 +11,14 @@ import Alamofire
 import SwiftyJSON
 
 /*
- • What is an API?
  • What is the purpose of an API Client?
  
- API stands for Application Programming Interface. In simple, 
+ Well, this file takes care of making the network request 
+ to retrieve the top 25 movies from iTunes. 
  
- 
+ Why create an APIClient? Because the View Controller shouldn't 
+ care about the network logic. There should be a separation of
+ concern.
  */
 
 struct APIClient {
