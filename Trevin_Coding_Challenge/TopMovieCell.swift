@@ -7,11 +7,12 @@
 //
 
 import UIKit
+
+// SDWebImage is used to simplify downloading the poster image 
 import SDWebImage
 
 
 class TopMovieCell: UICollectionViewCell {
-    
     
     @IBOutlet weak var movieTitleLabel: UILabel!
     
@@ -21,6 +22,7 @@ class TopMovieCell: UICollectionViewCell {
     
     @IBOutlet weak var posterImage: UIImageView!
     
+    /// Assigns the data from the movie to the UIElements
     func configure(with movie: Movie) {
         movieTitleLabel.text = movie.title
         releaseDateLabel.text = movie.releaseDate

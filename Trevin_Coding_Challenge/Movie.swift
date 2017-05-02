@@ -30,17 +30,28 @@ import SwiftyJSON
 
 struct Movie {
     
-    // 3
+    //
     var title: String?
     var releaseDate: String?
     var price: String?
     var itunesLink: URL?
     var posterLink: URL?
     
-    // 4 & 5
+    
+/*
+ • What does the init below do?
+ 
+ • init is short for initializer
+ • When creating a Movie using the blueprint or the class
+   that we have created, we use the init to create the Movie
+     
+*/
     init?(json: JSON) {
         
-        // 6
+        /* 
+         These 'guard statements' allows us to stop a movie from
+         being created if it's missing information.
+        */
         guard let title = json["im:name"]["label"].string else {
             return nil
         }
@@ -61,7 +72,10 @@ struct Movie {
             return nil
         }
         
-        // 7
+        /* 
+         If nothing is missing, then assign the values we received
+         to the properties of the Movie.
+        */
         self.title = title
         self.posterLink = posterLink
         self.releaseDate = releaseDate
@@ -74,12 +88,7 @@ struct Movie {
 
 
 /*
- • What does the init do?
- 
-    • init is short for initializer 
-    • When creating a Movie using the blueprint or the class 
-      that we have created, we use the init to create the Movie
- 
+
  • Why is there a question mark on the init?
  
     • init? is called a fail-able initializer 

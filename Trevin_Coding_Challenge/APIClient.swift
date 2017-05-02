@@ -30,14 +30,14 @@ struct APIClient {
     
     
     /*
-     • What is the purpose of the getTopMovies method?
+     • What is the purpose of the getTopMovies method(found below)?
      
      The purpose of this method is to retrieve the top 25 movies 
      from iTunes using the itunesLink above.
      
      Notice there's a "completion" parameter. This is called a
      completion handler. In simple, a completion handler is called 
-     after the getTopMovies function completes its execution. It's 
+     after the getTopMovies function completes running. It's
      like calling two functions one after another.
      
      The completion handler returns a list of the top 25 Movies 
@@ -82,10 +82,12 @@ struct APIClient {
                 
                 
                 /*
-                 • What does entry.flatMap(Movie.init) do?
+                 • What does entry.flatMap(Movie.init) do(found below)?
+                 
                  This one line of code is responsible for creating
                  25 movies. In simple, it takes the data from 'entry'
-                 and uses the Movie's init to
+                 and uses the Movie's init to create the movies and
+                 stores it into a list of movies.
                 */
                 let topMoviesCollection = entry.flatMap(Movie.init)
                 // The flattened array is then stored in the topMovies constant

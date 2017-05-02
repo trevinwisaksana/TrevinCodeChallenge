@@ -23,18 +23,11 @@ class MovieDetailViewController: UIViewController {
     private var iTunesLink: URL?
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-    
-    
     @IBAction func openiTunesButton(_ sender: UIButton) {
         // Unwrapping the iTunesLink
         if let itunesLink = iTunesLink {
-            // Opening the iTunes App
-           UIApplication.shared.openURL(itunesLink)
+            // Opening the iTunes App using the link           
+            UIApplication.shared.openURL(itunesLink)
         }
     }
     
@@ -48,6 +41,10 @@ class MovieDetailViewController: UIViewController {
         
     }
     
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     /// Method that configures the UIElements of the MovieDetailViewController.
     ///
