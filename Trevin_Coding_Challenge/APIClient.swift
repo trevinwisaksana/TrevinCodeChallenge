@@ -21,7 +21,7 @@ import SwiftyJSON
  concern.
  */
 
-struct APIClient {
+class APIClient {
     
     /*
      • Try to open this link on your browser
